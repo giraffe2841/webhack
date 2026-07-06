@@ -8,7 +8,7 @@ CORS(app)
 def page1():
     return send_from_directory("static", "index.html")
 
-@app.route("/password.html")
+@app.route("/password")
 def page2():
     return send_from_directory("static", "password.html")
 
