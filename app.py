@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__, static_folder="static")
 CORS(app)
 
-@app.route("/index.html")
+@app.route("/")
 def page1():
     return send_from_directory("static", "index.html")
 
